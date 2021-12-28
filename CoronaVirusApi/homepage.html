@@ -1,50 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <title>HOME PAGE</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <title>HOME PAGE</title>
 
-</head>
-<body>
-    <div class="contianer">
-        <h2>COVID-19 cases in <span id=-"country' "></span><img src=11 id=" flag"></h2>
-        <div class="board">
-            <div class="card a"><i class="fa fa-tachometer"></i>
-                <h5>Positivi</h5>
-                <span id="active"></span>
-            </div>
+    </head>
 
-            <div class="card ca"><i class="fa fa-th-list"></i>
-                <h5>Casi Totali</h5> 
-                <span id="cases"></span>
-            </div>
+    <body>
+        <div class="contianer">
+            <h2>COVID-19 cases in <span id="country"></span><img src=11 id=" flag"></h2>
+            <div class="board">
+                <div class="card a"><i class="fa fa-tachometer"></i>
+                    <h5>Positivi</h5>
+                    <span id="active"></span>
+                </div>
 
-            <div class="card cr"><i class="fa fa-times-circle"></i>
-                <h5>Casi Critici</h5>
-                <span id="critical"></span>
-            </div>
+                <div class="card ca"><i class="fa fa-th-list"></i>
+                    <h5>Casi Totali</h5>
+                    <span id="cases"></span>
+                </div>
 
-            <div class="card d"><i class="fa fa-times"></i>
-                <h5>Morti</h5>
-                <span id="death"></span>
-            </div>
+                <div class="card cr"><i class="fa fa-times-circle"></i>
+                    <h5>Casi Critici</h5>
+                    <span id="critical"></span>
+                </div>
 
-            <div class="card r"><i class="fa fa-check-square"></i>
-                <h5>Casi Ricoverati</h5>
-                <span id="recovered"></span>
-            </div>
+                <div class="card d"><i class="fa fa-times"></i>
+                    <h5>Morti</h5>
+                    <span id="death"></span>
+                </div>
 
-            <div class="card t"><i class="fa fa-eye"></i>
-                <h5>Test Totali Fatti</h5>
-                <span id="tests"></span>
+                <div class="card r"><i class="fa fa-check-square"></i>
+                    <h5>Casi Ricoverati</h5>
+                    <span id="recovered"></span>
+                </div>
+
+                <div class="card t"><i class="fa fa-eye"></i>
+                    <h5>Test Totali Fatti</h5>
+                    <span id="tests"></span>
+                </div>
             </div>
-</div>
-</div>
-</div>
-</body>
-</htmls
+        </div>
+    </body>
+</html>
+
+<script type="text/javascript">
+fetch("http://corona.lmao.ninja/v2/countries")
+</script>
