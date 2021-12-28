@@ -5,10 +5,9 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="style.css">
         <title>HOME PAGE</title>
-
     </head>
 
     <body>
@@ -50,5 +49,15 @@
 </html>
 
 <script type="text/javascript">
-fetch("http://corona.lmao.ninja/v2/countries")
+fetch("http://corona.lmao.ninja/v2/countries/Nepal")
+.then((Response)=>{
+    return Response.json();
+})
+.then((data)=>{
+    document.getElementById("flag").src = data.countryInfo.flag;
+    document.getElementById("flag").src = data.countryInfo.flag;
+    document.getElementById("flag").src = data.countryInfo.flag;
+    document.getElementById("flag").src = data.countryInfo.flag;
+    document.getElementById("flag").src = data.countryInfo.flag;
+})
 </script>
